@@ -1,5 +1,5 @@
 # Source Round Timer (Redux, Updated)
-
+- Vers: 1.4.1
 - This is an update of the [old tf2 round timer plugin](https://forums.alliedmods.net/showthread.php?p=1769674).
 - Now *really* fully compatible with other source games.
 - Fixed the classic annoying bug that made the timer disappear from the hud after a few rounds.
