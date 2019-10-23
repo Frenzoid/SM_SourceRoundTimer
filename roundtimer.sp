@@ -5,7 +5,7 @@
 #include <sdktools>
 
 // ====[ DEFINES ]=============================================================
-#define PLUGIN_VERSION "1.4"
+#define PLUGIN_VERSION "1.4.1"
 
 // ====[ HANDLES | CVARS ]=====================================================
 new Handle:g_hCvarEnabled;
@@ -75,10 +75,10 @@ public OnPluginStart()
 	HookConVarChange(g_hCvarCommands, OnConVarChange);
 
 	HookEvent("round_start", OnRoundStart);
-	HookEvent("round_end", OnRoundEnd);
-	
 	HookEventEx("teamplay_round_start", OnRoundStart);
 	HookEventEx("arena_round_start", OnArenaStart);
+
+        HookEvent("round_end", OnRoundEnd);	
 	HookEventEx("teamplay_round_win", OnRoundEnd);
 
 	g_hHud = CreateHudSynchronizer();
